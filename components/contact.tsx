@@ -152,11 +152,11 @@ export default function ContactUs({
                     <div key="text-0" id="text-0" className=" col-span-12 col-start-auto">
                         <h1 className="font-heading text-4xl font-black">Dr. Albert Oduwole</h1>
                         <p className="not-first:mt-6 leading-7">
-                            <span className="text-lg font-semibold">Happy Birthday Dr. Albert Oduwole</span>
+                            <span className="text-lg font-semibold">My birthday is coming up on November 23rd, 2026</span>
 
                             <br />
                             <span className="text-sm text-muted-foreground">
-                                Let me know how i've impacted you.
+                                Let me know how I've impacted you.
                             </span>
                         </p>
                     </div>
