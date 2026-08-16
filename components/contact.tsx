@@ -135,7 +135,6 @@ export default function ContactUs({
 
         } catch (error) {
             console.error("Error submitting birthday wish:", error);
-            ;
         } finally {
             setIsSubmitting(false);
         }
@@ -155,6 +154,7 @@ export default function ContactUs({
             >
                 <div className="grid grid-cols-12 gap-4">
                     <div key="text-0" id="text-0" className=" col-span-12 col-start-auto">
+                        <p className="font-heading">I am</p>
                         <h1 className="font-heading text-4xl font-black">Dr. Albert Oduwole</h1>
                         <p className="not-first:mt-6 leading-7">
                             <span
@@ -267,7 +267,7 @@ export default function ContactUs({
                 onOpenChange={setIsWishesSheetOpen}
             >
                 <SheetContent side="right"
-                              className="w-full sm:w-150 lg:w-175 sm:max-w-none data-[side=bottom]:max-h-[50vh] data-[side=top]:max-h-[50vh]">
+                              className="w-full sm:w-150 lg:w-175 sm:max-w-none data-[side=bottom]:max-h-[50vh]">
                     <SheetHeader>
                         <SheetTitle>
                             Birthday Wishes 🎉<Button
