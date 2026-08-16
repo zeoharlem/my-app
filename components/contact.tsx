@@ -205,10 +205,17 @@ export default function ContactUs({
                                     id="comment"
                                     placeholder="Let me know how you've been impacted"
                                     rows={60}
+                                    maxLength={1000}
                                     className="min-h-50"
                                     disabled={isSubmitting}
                                     {...field}
                                 />
+
+                                <div className="flex w-full justify-between">
+                                    <FieldDescription>
+                                        {field.value?.length ?? 0}/1000
+                                    </FieldDescription>
+                                </div>
 
                                 {fieldState.invalid && <FieldError errors={[fieldState.error]}/>}
                             </Field>
