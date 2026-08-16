@@ -18,7 +18,7 @@ if (!supabaseSecretKey) {
     );
 }
 
-export const supabase = createClient(
+export const supabaseAdmin = createClient(
     supabaseUrl,
     supabaseSecretKey, {
         auth: {

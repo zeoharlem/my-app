@@ -1,7 +1,7 @@
 import {NextResponse} from "next/server";
 import {z} from "zod";
 
-import {supabase} from "@/lib/supabase";
+import {supabaseAdmin} from "@/lib/supabase-server";
 
 const birthdayWishSchema = z.object({
     name: z
@@ -84,7 +84,7 @@ export async function POST(request: Request) {
          *
          * This uses the server-only service role client.
          */
-        const {error} = await supabase
+        const {error} = await supabaseAdmin
             .from("birthday_tributes")
             .insert({name, comment});
 
